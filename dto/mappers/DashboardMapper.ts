@@ -22,6 +22,7 @@ export class DashboardMapper {
       listingsByCategory: this.toCategoryStatDtoArray(stats.listingsByCategory)
     };
   }
+  
 
   // Map monthly booking data to DTO
   private static toMonthlyBookingDtoArray(monthlyBookings: Array<{ month: string; bookings: number }>): MonthlyBookingDto[] {
