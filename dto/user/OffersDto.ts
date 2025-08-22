@@ -1,4 +1,3 @@
-// Offers DTOs
 export interface UpdateOfferPriceRequestDto {
 	listingId: string;
 	userId: string;

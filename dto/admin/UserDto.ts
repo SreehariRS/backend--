@@ -1,4 +1,3 @@
-// User DTOs for admin operations
 export interface UserResponseDto {
   id: string;
   name: string;

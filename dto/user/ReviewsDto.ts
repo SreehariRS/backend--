@@ -1,4 +1,3 @@
-// Reviews DTOs
 export interface ReviewDto {
 	id: string;
 	userId: string;

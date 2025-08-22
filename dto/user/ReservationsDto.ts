@@ -1,4 +1,3 @@
-// Reservations DTOs
 export interface ReservationDto {
 	id: string;
 	userId: string;

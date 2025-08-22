@@ -1,4 +1,3 @@
-// Notifications DTOs
 export interface NotificationDto {
 	id: string;
 	userId: string;

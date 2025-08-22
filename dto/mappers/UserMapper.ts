@@ -6,7 +6,6 @@ import {
 } from "../admin/UserDto";
 
 export class UserMapper {
-  // Map User domain model to UserResponseDto
   static toUserResponseDto(user: User): UserResponseDto {
     return {
       id: user.id,
@@ -18,12 +17,10 @@ export class UserMapper {
     };
   }
 
-  // Map multiple User domain models to UserResponseDto array
   static toUserResponseDtoArray(users: User[]): UserResponseDto[] {
     return users.map(user => this.toUserResponseDto(user));
   }
 
-  // Map PaginatedResponse<User> to UserListResponseDto
   static toUserListResponseDto(paginatedUsers: PaginatedResponse<User>): UserListResponseDto {
     return {
       data: this.toUserResponseDtoArray(paginatedUsers.data),
@@ -33,7 +30,6 @@ export class UserMapper {
     };
   }
 
-  // Map User domain model to UserBlockResponseDto
   static toUserBlockResponseDto(user: User, action: string): UserBlockResponseDto {
     return {
       message: `User ${action} successfully`,

@@ -1,4 +1,3 @@
-// Messages DTOs
 export interface MessageDto {
 	id: string;
 	message?: string;

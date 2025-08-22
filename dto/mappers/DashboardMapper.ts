@@ -6,7 +6,6 @@ import {
 } from "../admin/DashboardDto";
 
 export class DashboardMapper {
-  // Map DashboardStats domain model to DashboardStatsResponseDto
   static toDashboardStatsResponseDto(stats: DashboardStats): DashboardStatsResponseDto {
     return {
       totalUsers: stats.totalUsers,
@@ -24,7 +23,6 @@ export class DashboardMapper {
   }
   
 
-  // Map monthly booking data to DTO
   private static toMonthlyBookingDtoArray(monthlyBookings: Array<{ month: string; bookings: number }>): MonthlyBookingDto[] {
     return monthlyBookings.map(booking => ({
       month: booking.month,
@@ -32,7 +30,6 @@ export class DashboardMapper {
     }));
   }
 
-  // Map category stat data to DTO
   private static toCategoryStatDtoArray(categoryStats: Array<{ name: string; value: number }>): CategoryStatDto[] {
     return categoryStats.map(stat => ({
       name: stat.name,

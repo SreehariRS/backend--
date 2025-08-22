@@ -1,4 +1,3 @@
-// Host DTOs for admin operations
 export interface HostResponseDto {
   id: string;
   name: string;

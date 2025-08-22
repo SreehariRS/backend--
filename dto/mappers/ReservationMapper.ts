@@ -5,7 +5,6 @@ import {
 } from "../admin/ReservationDto";
 
 export class ReservationMapper {
-  // Map Reservation domain model to ReservationResponseDto
   static toReservationResponseDto(reservation: Reservation): ReservationResponseDto {
     return {
       id: reservation.id,
@@ -17,12 +16,10 @@ export class ReservationMapper {
     };
   }
 
-  // Map multiple Reservation domain models to ReservationResponseDto array
   static toReservationResponseDtoArray(reservations: Reservation[]): ReservationResponseDto[] {
     return reservations.map(reservation => this.toReservationResponseDto(reservation));
   }
 
-  // Map PaginatedResponse<Reservation> to ReservationListResponseDto
   static toReservationListResponseDto(paginatedReservations: PaginatedResponse<Reservation>): ReservationListResponseDto {
     return {
       data: this.toReservationResponseDtoArray(paginatedReservations.data),

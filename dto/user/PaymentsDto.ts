@@ -1,4 +1,3 @@
-// Payments DTOs
 export interface CreateOrderRequestDto {
 	amount: number;
 	currency?: string;

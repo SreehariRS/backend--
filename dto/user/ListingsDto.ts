@@ -1,4 +1,3 @@
-// Listings DTOs
 export interface ListingDto {
 	id: string;
 	title: string;

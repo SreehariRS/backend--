@@ -1,4 +1,3 @@
-// Reservation DTOs for admin operations
 export interface ReservationResponseDto {
   id: string;
   guestName: string;

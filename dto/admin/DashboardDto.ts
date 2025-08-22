@@ -1,4 +1,3 @@
-// Dashboard DTOs for admin dashboard statistics
 export interface DashboardStatsResponseDto {
   totalUsers: number;
   totalBookings: number;

@@ -1,4 +1,3 @@
-// Admin DTOs for data transfer
 export interface AdminLoginRequestDto {
   email: string;
   password: string;
