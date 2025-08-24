@@ -18,6 +18,7 @@ export default class AuthRepository extends BaseRepository implements IAuthRepos
       });
 
       if (!admin) return null;
+      
 
       return {
         id: admin.id,
